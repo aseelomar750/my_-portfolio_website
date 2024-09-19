@@ -1,0 +1,242 @@
+/* Use border-box in all elements. */
+/* *
+{
+  box-sizing: border-box;
+} */
+*{
+box-sizing: border-box; /* Uses border-box in all elements. */
+  }
+
+html{
+    
+    font-family: Arial,Georgia, 'Times New Roman', Times, serif; 
+ }
+
+ body {
+    /* add light gry color */
+    background-color:#95D2B3;
+    font-size: 12px;
+    line-height: 2;
+    padding: 2rem;/* add padding */
+    margin: 1rem; /*add margin*/
+    /* background-image: url('imgs/bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; */
+    /* color: #ffffff; */
+    box-sizing: border-box;
+ }
+
+a{
+/* remove the under line  */
+    text-decoration: none ;
+    /* add color for links */
+    /* color: #007bff; */
+    
+}
+
+
+h1{
+/* change the size of fonts for heading 1 */
+    font-size: 2.0rem;
+    color : #F97300;
+    text-align: center;
+    text-shadow: white 1px 1px;
+    box-sizing: border-box;
+    padding-bottom: 1rem;/* Apply padding below header 1 */
+}
+
+h1:hover {
+    color : #F97300;
+    text-shadow: white 2px 2px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    border: 2px solid #55AD9B; /* add border of 2px and black color */
+    border-radius: 10px;
+    background-color:#D8EFD3;
+}
+
+
+/* this is for contacts and links*/
+.contact-info > p {
+    line-height: 1;
+}
+/* add div class to wrap skills section */
+.skills-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+  }
+
+/* this is for h2font size */
+
+h2{
+    color : #F97300;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    padding-bottom: 1rem; /* Apply padding below header2 */
+    
+}
+/* this is for h3 font size */
+
+h3{
+    color : #F97300;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    padding-bottom: 1rem; /* Apply padding below header3 */
+}
+
+/* this is for paragrph font size */
+
+p{
+
+    font-size: 1rem;
+    line-height: 2;
+    box-sizing: border-box;
+}
+/* this is for list font size */
+
+li{
+
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* this is for form font size */
+/* Adjust form elements to capture the same look and feel.*/
+form input,
+form textarea
+{
+  padding: 0.1rem 0.2rem;
+  color: #ffffff;
+  border: 2px solid #959393;
+  background-color: #ffffff;
+}
+
+/* Remove outlines from form elements*/
+form input,
+form textarea
+{
+  outline: none;
+}
+
+
+form{
+
+    font-size: 1rem;
+    box-sizing: border-box;
+    
+
+}
+table{
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+textarea{
+
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+.cv-section {
+    padding: 10px 20px 10px 20px;
+    box-sizing: border-box;
+}
+
+.profile-section {
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 40px 0 30px 0;
+}
+
+.profile-img {
+    border-radius: 50%;
+    border: 2px solid #407736;
+    box-sizing: border-box;
+    width: 200px;
+}
+
+footer {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.certif-table {
+    padding: 0 10px 0 10px;
+    box-sizing: border-box;
+}
+
+.certif-table > thead {
+    text-align: left;
+    box-sizing: border-box;
+}
+
+/* #MyNameID{
+
+    color: blue;
+} */
+
+/* .MyNameClass{
+
+    color: blue;
+} */
+
+/* h2, .certif-table, #MyNameID{
+    color: blueviolet;
+} */
+
+button:hover{
+    background-color: #97BE5A;
+    color: white;
+    border-color: #dde1e5;
+    box-sizing: border-box;
+
+}
+
+a:hover{
+
+    color: orangered;
+    box-sizing: border-box;
+}
+
+h3{
+/* I can use the !important to force the color or anything else */
+    /* color: blueviolet !important;  */ 
+    box-sizing: border-box;
+}
+.border-dotted
+{
+  border: 2px dotted #33ff33;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 480px) {
+    .profile-section {
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+  }
